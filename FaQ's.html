@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FaQ's - Ansh Infotech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="about.css" />
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <!-- <img src="images/logo.png" alt="Bootstrap" width="240" height="50" /> -->
+          <h1 class="heading">ANSH Infotech</h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="navbarSupportedContent"
+          aria-labelledby="navbarSupportedContentLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="navbarSupportedContentLabel">
+              Menu
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto me-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="FaQ's.html" class="nav-link">FaQ's</a>
+              </li>
+              <li class="nav-item">
+                <a href="training.html" class="nav-link">Skill Development Training</a>
+              </li>
+              <li class="nav-item">
+                <a href="Contactus.html" class="nav-link">Contact Us</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+    <!-- hero -->
+    <div class="container-fluid slider">
+      <div class="slider-h">
+        <h1 class="text-center">Frequently Asked Questions</h1>
+      </div>
+    </div>
+    <!-- about hero -->
+    <section class="hero container-fluid">
+      <div class="container">
+        <div class="gap-5">
+          <!--  -->
+          <div class="accordion row" id="accordionExample">
+            <div class="col-md-6">
+              <div class="accordion-item m-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    <h5>What benefits can you guarantee?</h5>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      All projects we take up carry the following guarantees:
+                      Confidentiality guarantee: All client details will be kept
+                      confidential Price guarantee: Minimum 60% cost-saving over
+                      on-site development Results guarantee: Progress-linked
+                      payments weighted toward the end.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="accordion-item m-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <h5>How do we keep ourselves informed about progress?</h5>
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      We will send you regular project status reports. We use a
+                      combination of pre-determined update schedules (normally
+                      email) and ad-hoc meetings (usually tele-conferences, or
+                      live chat).
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="accordion-item m-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <h5>What is the Quality of People you Employ?</h5>
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      The quality of a software development company is
+                      ultimately the quality of its people. Our people are very
+                      strong for software projects: Are English-speaking
+                      Graduate/Post-Graduate Engineers Have multiple years of
+                      industry experience, or are outstanding new engineers All
+                      people have experience in off-shore projects with
+                      US/European clients Most people are from premier
+                      engineering institutes or have proven exceptional
+                      abilities Are industry-certified
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="accordion-item m-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    <h5>What control do we have over the project?</h5>
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      You will have ability to keep close control over the
+                      project. Our assigned Project Manager will be your single
+                      point-of-contact for all issue resolution, and will work
+                      closely with your guidelines.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="accordion-item m-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    <h5>Can you guarantee time-bound results?</h5>
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      No. We work on time-based billing for reasons that benefit
+                      our clients, and guaranteeing fixed-time results means
+                      compromising on that clarity and delivering sub-optimal
+                      results to clients. The team may be able to give you an
+                      idea, but that is not a business guarantee.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="accordion-item m-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    <h5>What ERP Packages you are Providing?</h5>
+                  </button>
+                </h2>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      We provide ERP Solutions to Schools, Colleges, Gym,
+                      Hospitals, Hotels and Office Managements.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="accordion-item m-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="collapseSeven"
+                  >
+                    <h5>What contracts and agreements do you sign?</h5>
+                  </button>
+                </h2>
+                <div
+                  id="collapseSeven"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      We sign NDAs before initial discussions, and final
+                      contracts are drawn out in detail. We are normally bound
+                      by the legal framework of our clientâ€™s country, and are
+                      a registered organization in India.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="accordion-item m-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseEight"
+                    aria-expanded="false"
+                    aria-controls="collapseEight"
+                  >
+                    <h5>Why to choose AIT for Development Services ?</h5>
+                  </button>
+                </h2>
+                <div
+                  id="collapseEight"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      AIT provides the best technical solutions at competitive
+                      price within the time fame.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              <div class="accordion-item m-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTen"
+                    aria-expanded="false"
+                    aria-controls="collapseTen"
+                  >
+                    <h5>How much does a Website Development Cost?</h5>
+                  </button>
+                </h2>
+                <div
+                  id="collapseTen"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      AIT provides the best technical solutions at competitive
+                      price within the time fame.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="accordion-item m-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseEleven"
+                    aria-expanded="false"
+                    aria-controls="collapseEleven"
+                  >
+                    <h5>Can you come on-site?</h5>
+                  </button>
+                </h2>
+                <div
+                  id="collapseEleven"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Yes we do, where required. This may be especially useful
+                      in initial requirements gathering, final implementation or
+                      other pain points. In such cases, our consultants will
+                      work on-site at pre-decided rates.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="accordion-item m-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTweleve"
+                    aria-expanded="false"
+                    aria-controls="collapseTweleve"
+                  >
+                    <h5>How much does an Android App Development Cost?</h5>
+                  </button>
+                </h2>
+                <div
+                  id="collapseTweleve"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Similar to a website, the cost of an Android app can vary
+                      depending upon the number of activities that app will
+                      perform. Generally a Static Android App with maximum 5
+                      activities starts in Rs. 8,000/- onwards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="accordion-item m-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThirteen"
+                    aria-expanded="false"
+                    aria-controls="collapseThirteen"
+                  >
+                    <h5>How do you assure Confidentiality?</h5>
+                  </button>
+                </h2>
+                <div
+                  id="collapseThirteen"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      We sign NDAs and Confidentiality Agreements as required by
+                      you. All our employees are full-time employees, and are
+                      bound by the company Confidentiality and Non-Disclosure
+                      clauses.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="accordion-item m-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFourteen"
+                    aria-expanded="false"
+                    aria-controls="collapseFourteen"
+                  >
+                    <h5>
+                      Who will pay the cost of Play Store, Apple Store Account
+                      Deployment ?
+                    </h5>
+                  </button>
+                </h2>
+                <div
+                  id="collapseFourteen"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      For hosting an App on play-store, Apple Store, the client
+                      is responsible to buy the Play-Store Account or will pay
+                      to AIT for the same.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+                <div class="accordion-item m-2">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseNine"
+                      aria-expanded="false"
+                      aria-controls="collapseNine"
+                    >
+                      <h5>
+                        We are worried about quality; how do you assure solid
+                        projects?
+                      </h5>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseNine"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Our developers are dedicated to producing quality code. We
+                        have formal processes to keep quality under tight control,
+                        including periodic code reviews and design walk-throughs.
+                        We concentrate on being first-time right, and believe the
+                        creation-step itself should be strong.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <!--  -->
+        </div>
+      </div>
+    </section>
+    <!-- about hero -->
+
+    <!-- team -->
+    <!-- clients -->
+    <!-- <div
+      class="container"
+      style="
+        margin-top: 150px;
+        margin-bottom: 50px;
+        background-color: #f8fafc;
+        padding: 30px;
+      "
+    >
+      <div class="row justify-content-center gap-5">
+        <div class="col-md-2">
+          <img
+            src="https://preview.codeless.co/converta/default/wp-content/uploads/2023/02/1.png"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-2">
+          <img
+            src="https://preview.codeless.co/converta/default/wp-content/uploads/2023/02/2.png"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-2">
+          <img
+            src="https://preview.codeless.co/converta/default/wp-content/uploads/2023/02/3.png"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-2">
+          <img
+            src="https://preview.codeless.co/converta/default/wp-content/uploads/2023/02/4.png"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-2">
+          <img
+            src="https://preview.codeless.co/converta/default/wp-content/uploads/2023/02/5.png"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div> -->
+    <!-- client -->
+
+    <!-- newsletter -->
+    <!-- <div
+      class="container d-flex justify-content-center"
+      style="margin-top: 60px; margin-bottom: 160px"
+    >
+      <div class="newsletter d-flex justify-content-center flex-column">
+        <div class="d-flex justify-content-center">
+          <div class="col-md-8">
+            <h2 class="text-center fw-bold">
+              Receive the latest technology &amp; business news in your inbox
+            </h2>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <input type="email" placeholder="Your Email Address" />
+          <button>Sign Up</button>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row footer-row">
+          <div class="col-md-5 footer-col">
+            <!-- <img
+              src="https://preview.codeless.co/converta/default/wp-content/uploads/2023/02/logo.png"
+              alt=""
+              class="img-fluid col-4"
+            /> -->
+            <h1 class="heading">ANSH Infotech</h1>
+            <p>
+              Creative-powered to fuel your growth goals. We build world-class
+              digital products, software and branding.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="row" style="gap: 80px">
+              <div class="col-md-2 footer-col">
+                <h5>Products</h5>
+                <ul>
+                  <li>Unify App</li>
+                  <li>Page Builder</li>
+                  <li>Templates</li>
+                  <li>Pricing</li>
+                </ul>
+              </div>
+              <div class="col-md-2 footer-col">
+                <h5>Resources</h5>
+                <ul>
+                  <li>Design</li>
+                  <li>Inspiration</li>
+                  <li>Blog</li>
+                  <li>Jobs</li>
+                </ul>
+              </div>
+              <div class="col-md-3 footer-col">
+                <h5>Support</h5>
+                <ul>
+                  <li>Documentaton</li>
+                  <li>Help Desk</li>
+                  <li>Video Guides</li>
+                  <li>Seurity</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- copyright -->
+      <div class="container-fluid mt-3">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-8 copy-col">
+              <span>&copy; Copyright Unify - All Rights Reserved.</span>
+            </div>
+            <div class="col-md-3 copy-col">
+              <i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

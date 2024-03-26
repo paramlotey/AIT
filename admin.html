@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - AIT</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      /* Custom Styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+      }
+
+      .enquiry {
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .enquiry h2 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .enquiry p {
+        color: #666;
+      }
+
+      /* Contact Styles */
+      .contact {
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact h2 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .contact p {
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div id="enquiryDetailsContainer" class="row"></div>
+    </div>
+
+    <div class="container mt-5">
+      <div id="contactusContainer" class="row"></div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      // Fetch enquiry details from backend API
+      fetch("http://localhost:3000/api/allenquiries")
+        .then((response) => response.json())
+        .then((data) => {
+          // Check if data retrieval was successful
+          if (data.success) {
+            const enquiryDetailsContainer = document.getElementById(
+              "enquiryDetailsContainer"
+            );
+            // Loop through the data and create HTML elements to display the details
+            data.data.forEach((enquiry) => {
+              const enquiryDiv = document.createElement("div");
+              enquiryDiv.classList.add("col-md-6");
+              enquiryDiv.innerHTML = `
+                <div class="enquiry">
+                    <h2>${enquiry.name}</h2>
+                    <p>ID: ${enquiry.uniqueID}</p>
+                    <p>Email: ${enquiry.email}</p>
+                    <p>Phone: ${enquiry.phone}</p>
+                    <p>College: ${enquiry.college}</p>
+                    <p>Address: ${enquiry.address}</p>
+                    <p>Course: ${enquiry.course}</p>
+                    <p>Course Pdf Downloaded: ${enquiry.coursePDF}</p>
+                </div>
+                `;
+              enquiryDetailsContainer.appendChild(enquiryDiv);
+            });
+          } else {
+            // Display error message if data retrieval failed
+            console.error("Failed to fetch enquiry details:", data.error);
+          }
+        })
+        .catch((error) => {
+          console.error("Error fetching enquiry details:", error);
+        });
+
+      fetch("http://localhost:3000/api/allcontacts")
+        .then((response) => response.json())
+        .then((data) => {
+          // Check if data retrieval was successful
+          if (data.success) {
+            const contactusContainer =
+              document.getElementById("contactusContainer");
+            // Loop through the data and create HTML elements to display the details
+            data.contactdata.forEach((contact) => {
+              const contactDiv = document.createElement("div");
+              contactDiv.classList.add("col-md-6");
+              contactDiv.innerHTML = `
+                <div class="contact">
+                    <h2>${contact.name}</h2>
+                    <p>ID: ${contact.uniqueID}</p>
+                    <p>Email: ${contact.email}</p>
+                    <p>Subject: ${contact.subject}</p>
+                    <p>Message: ${contact.message}</p>
+                </div>
+                `;
+              contactusContainer.appendChild(contactDiv);
+            });
+          } else {
+            // Display error message if data retrieval failed
+            console.error("Failed to fetch contact details:", data.error);
+          }
+        })
+        .catch((error) => {
+          console.error("Error fetching contact details:", error);
+        });
+    </script>
+  </body>
+</html>

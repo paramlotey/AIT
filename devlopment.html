@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="dev.css" />
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <!-- <img src="images/logo.png" alt="Bootstrap" width="240" height="50" /> -->
+          <h1 class="heading">ANSH Infotech</h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="navbarSupportedContent"
+          aria-labelledby="navbarSupportedContentLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="navbarSupportedContentLabel">
+              Menu
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto me-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="FaQ's.html" class="nav-link">FaQ's</a>
+              </li>
+              <li class="nav-item">
+                <a href="training.html" class="nav-link">Skill Development Training</a>
+              </li>
+              <li class="nav-item">
+                <a href="register.html" class="nav-link">Register</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+    <!-- hero -->
+    <div class="container-fluid slider">
+      <div class="slider-h">
+        <h1>Development</h1>
+      </div>
+    </div>
+    <!-- hero -->
+    <!--!devlopment  -->
+    <section class="development container-fluid">
+      <div class="container-fluid">
+        <h2>Development Services That We Offer</h2>
+        <div class="tab-container">
+          <div class="tab">
+            <button class="tab-button active-btn" onclick="openTab('tab1')">
+              Web Designing
+            </button>
+          </div>
+          <div class="tab">
+            <button class="tab-button" onclick="openTab('tab2')">
+              Web Development
+            </button>
+          </div>
+          <div class="tab">
+            <button class="tab-button" onclick="openTab('tab3')">
+              App Development
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="dev-service-row row justify-content-center gap-5 tab-content active"
+          id="tab1"
+        >
+          <div class="col-md-3">
+            <div class="inner">
+              <div class="icon">
+                <i class="fa-brands fa-wordpress"></i>
+              </div>
+            </div>
+            <h4>Wordpress</h4>
+            <p>
+              It's really bona fide that WordPress has created as the most
+              superlative substance association structure( CMS) which has been
+              as a rule used by considerable number of associations over the
+              globe.
+            </p>
+          </div>
+
+          <div class="col-md-3">
+            <div class="inner">
+              <div class="icon">
+                <i class="fas fa-globe"></i>
+              </div>
+            </div>
+            <h4>COMPLEX APPLICATION DESIGN</h4>
+            <p>
+              In discrepancy with introductory figure, a mind boggling
+              configuration incorporates colorful propelled styles. external
+              ActionScript record is a introductory instrument in complex
+              operation plan.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="inner">
+              <div class="icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+            </div>
+            <h4>LOGO DESIGN</h4>
+            <p>
+              In moment’s focused world, it's imperative to have a superlative
+              totem figure. For each association, a one of a kind totem is
+              exceptionally introductory as a totem symbolizes its image.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="inner">
+              <div class="icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+            </div>
+            <h4>LANDING PAGES</h4>
+            <p>
+              A welcome page is an essential page of a site. Presentation pages
+              are essentially used for giving vital information or showcasing
+              message about a specific organization or thing.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="inner">
+              <div class="icon">
+                <i class="fas fa-book"></i>
+              </div>
+            </div>
+            <h4>ONLINE CATALOGUES</h4>
+            <p>
+              Online indicator is a perfect approach to enhance a point’s
+              prosecution in web dawdlers and connect new guests. Online lists
+              help in making particulars open to wide customer base.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="inner">
+              <div class="icon">
+                <i class="fas fa-desktop"></i>
+              </div>
+            </div>
+            <h4>DYNAMIC WEBSITE</h4>
+            <p>
+              A dynamic point engages guests to change content with no
+              multifaceted plan. A dynamic point gives high versatility to point
+              callers and possessors.
+            </p>
+          </div>
+        </div>
+        <div
+          class="dev-service-row row justify-content-center gap-5 tab-content"
+          id="tab2"
+        >
+          <div class="col-md-3">
+            <div class="inner">
+              <div class="icon">
+                <i class="fa-brands fa-grav"></i>
+              </div>
+            </div>
+            <h4>CMS Development</h4>
+            <p>
+              Content management system( CMS) is really the stylish possible
+              approach to deal with a point’s substance. By exercising CMS, a
+              point’s substance can be gotten to at whatever time from anyplace
+            </p>
+          </div>
+
+          <div class="col-md-3">
+            <div class="inner">
+              <div class="icon">
+                <i class="fa-brands fa-wordpress"></i>
+              </div>
+            </div>
+            <h4>WORDPRESS THEME DEVELOPMENT</h4>
+            <p>
+              It is indubitably genuine that WordPress has developed as the most
+              superlative substance administration framework (CMS) which has
+              been every now and again utilized by substantial number of
+              organizations over the globe.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="inner">
+              <div class="icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+            </div>
+            <h4>CUSTOM APPLICATION DEVELOPMENT</h4>
+            <p>
+              Custom Operation development has capability to transfigure scarce
+              IT coffers into business profit and it gives inflexibility of
+              structure operations according to business conditions.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="inner">
+              <div class="icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+            </div>
+            <h4>SOCIAL NETWORKING WEBSITES</h4>
+            <p>
+              Person to person communication sites are undeniably a phenomenal
+              approach to interface with others in virtual world. Most extreme
+              people and organizations are utilizing informal communication
+              sites nowadays
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="inner">
+              <div class="icon">
+                <i class="fas fa-book"></i>
+              </div>
+            </div>
+            <h4>E-COMMERCE DEVELOPMENT</h4>
+            <p>
+              Magento is most generally employed internet business programming
+              which is to a great degree accessible in making online
+              businesswebsites.This programming program empowers associations to
+              hold being guests and draw in new bones.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="inner">
+              <div class="icon">
+                <i class="fas fa-desktop"></i>
+              </div>
+            </div>
+            <h4>ONLINE PORTAL DEVELOPMENT</h4>
+            <p>
+              More often than not, entrance framework is a superlative interface
+              for clients as it empowers them to get to different
+              administrations and assets, for example, messages, corporate
+              databases and online applications.
+            </p>
+          </div>
+        </div>
+        <div
+          class="dev-service-row row justify-content-center gap-5 tab-content"
+          id="tab3"
+        >
+          <div class="col-md-3">
+            <div class="inner">
+              <div class="icon">
+                <i class="fa-brands fa-android"></i>
+              </div>
+            </div>
+            <h4>ANDROID APP DEVELOPMENT</h4>
+            <p>
+              Android is astronomically known as protean operation enhancement
+              inventions that are generally employed for creating different
+              movable operations. With the application of programming
+              advancement unit into android it's hearty and helpful that makes
+              enhancement simple and compelling.
+            </p>
+          </div>
+
+          <div class="col-md-3">
+            <div class="inner">
+              <div class="icon">
+                <i class="fa-brands fa-apple"></i>
+              </div>
+            </div>
+            <h4>IOS APP DEVELOPMENT</h4>
+            <p>
+              Swift is a current programming dialect that is sheltered, quick
+              and intelligent. Swift is a vigorous and instinctive programming
+              dialect made by Apple for building applications for iOS, Mac,
+              Apple TV and Apple Watch.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--todo footer -->
+    <footer>
+      <div class="container">
+        <div class="row footer-row">
+          <div class="col-md-5 footer-col">
+            <!-- <img
+              src="https://preview.codeless.co/converta/default/wp-content/uploads/2023/02/logo.png"
+              alt=""
+              class="img-fluid col-4"
+            /> -->
+            <h1 class="heading">ANSH Infotech</h1>
+            <p>
+              Creative-powered to fuel your growth goals. We build world-class
+              digital products, software and branding.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="row" style="gap: 80px">
+              <div class="col-md-2 footer-col">
+                <h5>Products</h5>
+                <ul>
+                  <li>Unify App</li>
+                  <li>Page Builder</li>
+                  <li>Templates</li>
+                  <li>Pricing</li>
+                </ul>
+              </div>
+              <div class="col-md-2 footer-col">
+                <h5>Resources</h5>
+                <ul>
+                  <li>Design</li>
+                  <li>Inspiration</li>
+                  <li>Blog</li>
+                  <li>Jobs</li>
+                </ul>
+              </div>
+              <div class="col-md-3 footer-col">
+                <h5>Support</h5>
+                <ul>
+                  <li>Documentaton</li>
+                  <li>Help Desk</li>
+                  <li>Video Guides</li>
+                  <li>Seurity</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- copyright -->
+      <div class="container-fluid mt-3">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-8 copy-col">
+              <span>&copy; Copyright Unify - All Rights Reserved.</span>
+            </div>
+            <div class="col-md-3 copy-col">
+              <i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function openTab(tabId) {
+        const tabContents = document.querySelectorAll(".tab-content");
+        tabContents.forEach((tab) => tab.classList.remove("active"));
+
+        const selectedTab = document.getElementById(tabId);
+        selectedTab.classList.add("active");
+
+        const tabButtons = document.querySelectorAll(".tab-button");
+        tabButtons.forEach((button) => button.classList.remove("active-btn"));
+
+        const clickedButton = document.querySelector(
+          `[onclick="openTab('${tabId}')"]`
+        );
+        clickedButton.classList.add("active-btn");
+      }
+    </script>
+    <!-- bootstrap cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

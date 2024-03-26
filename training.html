@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="training.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--! navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <!-- <img src="images/logo.png" alt="Bootstrap" width="240" height="50" /> -->
+          <h1 class="heading">ANSH Infotech</h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="navbarSupportedContent"
+          aria-labelledby="navbarSupportedContentLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="navbarSupportedContentLabel">
+              Menu
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto me-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="FaQ's.html" class="nav-link">FaQ's</a>
+              </li>
+              <li class="nav-item">
+                <a href="training.html" class="nav-link"
+                  >Skill Development Training</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="register.html" class="nav-link">Register</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+    <!--todo hero -->
+    <div class="container-fluid slider">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <!--* item 1  -->
+
+          <div class="carousel-item active" data-bs-interval="2000">
+            <div class="item-1">
+              <div class="slider-h">
+                <h1 class="text-center">Become a Full Stack Web Developer</h1>
+              </div>
+              <div class="slider-desc">
+                <p class="text-center">Technologies You Will Learn</p>
+              </div>
+
+              <div class="tech-icons">
+                <div class="icon">
+                  <img
+                    src="https://www.stickerpress.in/media/products/800x800/d6061e2a15f14dbaa6a542b313c9305f.jpg"
+                  />
+                  <p class="text-white">MongoDB</p>
+                </div>
+                <div class="icon">
+                  <img
+                    src="https://ih1.redbubble.net/image.438908244.6144/st,small,507x507-pad,600x600,f8f8f8.u2.jpg"
+                  />
+                  <p class="text-white w-100">Express Js</p>
+                </div>
+                <div class="icon">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHT5uUPJZYqRc9rBFpe2NbLlEbCzjk_VdzDNNnBjR7QhiuQ2dbjDOgyGbgTo8wZrD_GNI&usqp=CAU"
+                  />
+                  <p class="text-white w-100">Node Js</p>
+                </div>
+                <div class="icon">
+                  <img src="images/react_logo.png" />
+                  <p class="text-white w-100">React Js</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--* item 1  -->
+          <!--* item 2  -->
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="item-1">
+              <div class="slider-h">
+                <h1 class="text-center">
+                  Develop your skills as a Data Scientist and Analyst.
+                </h1>
+              </div>
+              <div class="slider-desc">
+                <p class="text-center">Technologies You Will Learn</p>
+              </div>
+
+              <div class="tech-icons">
+                <div class="icon">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT70qUCUgVzIgb_3Gt0AbED0GuWieZz-pcJLw&usqp=CAU"
+                  />
+                  <p class="text-white">Python</p>
+                </div>
+                <div class="icon">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPwadiM5bKag_kXYNSsuelB5wyF9EzSD1IPaQrSysvmYwnJeLZr4eKLCoL7O46Xs8avDc&usqp=CAU"
+                  />
+                  <p class="text-white w-100">Flask</p>
+                </div>
+                <div class="icon">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBQqrkdrw2gv2WBP98KCkGsCaG2beVR1LOYg&usqp=CAU"
+                  />
+                  <p class="text-white w-100">Tensorflow</p>
+                </div>
+                <div class="icon">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnLCCqTHypHonjcbQFWgks2Mrq0ldiVt31pQ&usqp=CAU"
+                  />
+                  <p class="text-white w-100">Pytorch</p>
+                </div>
+                <div class="icon">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Zrv5dXUX2Jwy7vyhA0n1yugbe82wTP__3qdnMCjo2KiE7XwKvsaKY6Nb3a_1pjhraPI&usqp=CAU"
+                  />
+                  <p class="text-white w-100">Numpy</p>
+                </div>
+                <div class="icon">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjwxYy_xmQzecaNIxxFXMuh8PEhKryik_hUamkfOI_vuCXOo6KXh4nfGt2xrOFvNLKLwI&usqp=CAU"
+                  />
+                  <p class="text-white w-100">Pandas</p>
+                </div>
+                <div class="icon">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShXfGNNhToqNErXBmDma8Gv_E9vsMNsxGL821vrJWK8asEGnezdM8JiNv6YU70Ax-RGn0&usqp=CAU"
+                  />
+                  <p class="text-white w-100">Matplotlib</p>
+                </div>
+                <div class="icon">
+                  <img
+                    src="https://user-images.githubusercontent.com/315810/92159303-30d41100-edfb-11ea-8107-1c5352202571.png"
+                  />
+                  <p class="text-white w-100">Seaborn</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--* item 2  -->
+
+          <!--* item 3  -->
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="item-1">
+              <div class="slider-h">
+                <h1 class="text-center">
+                  Buid your skills as an AI ML Engineer.
+                </h1>
+              </div>
+              <div class="slider-desc">
+                <p class="text-center">Technologies You Will Learn</p>
+              </div>
+
+              <div class="tech-icons">
+                <div class="icon">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT70qUCUgVzIgb_3Gt0AbED0GuWieZz-pcJLw&usqp=CAU"
+                  />
+                  <p class="text-white">Python</p>
+                </div>
+                <div class="icon">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPwadiM5bKag_kXYNSsuelB5wyF9EzSD1IPaQrSysvmYwnJeLZr4eKLCoL7O46Xs8avDc&usqp=CAU"
+                  />
+                  <p class="text-white w-100">Flask</p>
+                </div>
+                <div class="icon">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDB_IRuUOvQD5hk3X1hr13qA5uT82VQuiWwxeOXMKXSfiDqQrkCMe3K5xPYytLzOsdt1A"
+                  />
+                  <p class="text-white w-100">Open CV</p>
+                </div>
+                <div class="icon">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/020/280/691/original/nlp-letter-logo-design-on-white-background-nlp-creative-circle-letter-logo-concept-nlp-letter-design-vector.jpg"
+                  />
+                  <p class="text-white w-100 mx-3">NLP</p>
+                </div>
+                <div class="icon">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiAvq6fr4t-eOHQHlt4RTgbcI_WG1nJOxI1zbzSbUVe07iLW5cPwy9-9WaeZJwE1ltTt0"
+                  />
+                  <p class="text-white w-100">scikit-learn</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--* item 3  -->
+
+          <!--* item 4  -->
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="item-1">
+              <div class="slider-h">
+                <h1 class="text-center">
+                  Make a career as a Graphic Designer.
+                </h1>
+              </div>
+              <div class="slider-desc">
+                <p class="text-center">Technologies You Will Learn</p>
+              </div>
+
+              <div class="tech-icons">
+                <div class="icon">
+                  <img
+                    src="https://w7.pngwing.com/pngs/818/370/png-transparent-photoshop-2020-logo-icon.png"
+                  />
+                  <p class="text-white">Photoshop</p>
+                </div>
+                <div class="icon">
+                  <img
+                    src="https://img.freepik.com/premium-vector/adobe-illustrator-icon-ai-icon-with-color-illustrator-square-rectangle-color-logo-white-bg_904871-14.jpg?w=2000"
+                  />
+                  <p class="text-white w-100">Illustrator</p>
+                </div>
+                <div class="icon">
+                  <img src="images/indesign-logo.png" />
+                  <p class="text-white w-100">InDesign</p>
+                </div>
+                <div class="icon">
+                  <img src="images/after-effects.png" />
+                  <p class="text-white w-100">After Effects</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="item-1">
+              <div class="slider-h">
+                <h1 class="text-center">
+                  Fighting Cybercrime with Ethical Hacking.
+                </h1>
+              </div>
+              <div class="slider-desc">
+                <p class="text-center">Technologies You Will Learn</p>
+              </div>
+
+              <div class="tech-icons">
+                <div class="icon">
+                  <img
+                    src="https://www.stickerpress.in/media/products/800x800/d6061e2a15f14dbaa6a542b313c9305f.jpg"
+                  />
+                  <p class="text-white">MongoDB</p>
+                </div>
+                <div class="icon">
+                  <img
+                    src="https://ih1.redbubble.net/image.438908244.6144/st,small,507x507-pad,600x600,f8f8f8.u2.jpg"
+                  />
+                  <p class="text-white w-100">Express Js</p>
+                </div>
+                <div class="icon">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHT5uUPJZYqRc9rBFpe2NbLlEbCzjk_VdzDNNnBjR7QhiuQ2dbjDOgyGbgTo8wZrD_GNI&usqp=CAU"
+                  />
+                  <p class="text-white w-100">Node Js</p>
+                </div>
+                <div class="icon">
+                  <img src="images/react_logo.png" />
+                  <p class="text-white w-100">React Js</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item 7 -->
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="container-fluid training">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 col-sm-12">
+            <h2 class="text-center fw-bold" style="color: #2d3958">
+              Ignite Your Tech Spark: From Novice to Ninja
+            </h2>
+            <p class="text-center" style="color: #7b88a8">
+              Never stop learning, never stop exploring! ANSH InfoTech keeps
+              your tech spark ablaze, offering a journey of endless discovery.
+              From bite-sized coding adventures to deep dives into advanced
+              tech, we fuel your curiosity and equip you for a lifetime of
+              digital evolution!
+            </p>
+          </div>
+        </div>
+
+        <div class="row training-row justify-content-center gap-5 mt-5">
+          <div class="col-md-3 training-col">
+            <div class="">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHYlZLuNyEhcMNEPhnammnkdwoUIrlIGeOYA&usqp=CAU"
+                alt=""
+                style="width: 3rem"
+              />
+            </div>
+            <h4>Web Development</h4>
+            <p>
+              Click the brush below to unveil endless possibilities for your
+              dream website! ⬇️
+            </p>
+            <a href="courses/web.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1804/1804179.png"
+                style="width: 3rem"
+                alt=""
+              />
+            </div>
+            <h4>Web Designing</h4>
+            <p>
+              Web Magic Unfurled: Craft captivating interfaces, watch
+              conversions soar! We paint your digital dreams into reality. ✨
+            </p>
+            <a href="courses/webdesign.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/6470/6470993.png"
+                style="width: 3rem"
+                alt=""
+              />
+            </div>
+            <h4>App Development</h4>
+            <p>
+              From Idea Sketch to App Store Sensation: Craft your mobile future
+              with ANSH InfoTech!
+            </p>
+            <a href="courses/appdev.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="aws-icon">
+              <img
+                src="https://pbs.twimg.com/profile_images/1641476962362302464/K8lb6OtN_400x400.jpg"
+                alt=""
+                class="img-fluid"
+                style="width: 3rem"
+              />
+            </div>
+            <h4>Cloud Computing</h4>
+            <p>
+              Cloud Your Worries Away: Unleash Scalable Power with ANSH
+              InfoTech's Cloud Magic!
+            </p>
+            <a href="courses/cloud.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="">
+              <img
+                src="https://play-lh.googleusercontent.com/b62IeF3Ru8ko5ueNvYtlx8yEU2uBnFmSMXpPQAstIfAdKbWlfldZkz5i3wus-_MjwpMO"
+                alt=""
+                class="img-fluid"
+                style="width: 3rem"
+              />
+            </div>
+            <h4>Big Data</h4>
+            <p>
+              Untangle Big Data's Secrets: Insights Unleashed, Growth Amplified
+              with us! ⭐
+            </p>
+            <a href="courses/bigdata.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1853px-C_Programming_Language.svg.png"
+                alt=""
+                class="img-fluid"
+                style="width: 3rem"
+              />
+            </div>
+            <h4>C Programming</h4>
+            <p>
+              Dive into C: Craft Code Kingdoms with ANSH InfoTech's Powerful
+              Training!
+            </p>
+            <a href="courses/cprograming.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="aws-icon">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
+                alt=""
+                class="img-fluid"
+                style="width: 3rem"
+              />
+            </div>
+            <h4>C++</h4>
+            <p>
+              Craft Code Castles: Master C++ with ANSH, Power Up Your
+              Programming Potential!
+            </p>
+            <a href="courses/c++.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="">
+              <img
+                src="https://images.freeimages.com/clg/istock/previews/1069/106966719-hacker-with-laptop.jpg"
+                alt=""
+                class="img-fluid"
+                style="width: 3rem; mix-blend-mode: darken"
+              />
+            </div>
+            <h4>CEH</h4>
+            <p>
+              Crack Cyber Codes: Unmask Vulnerabilities, Fortify your Digital
+              Defenses with our CEH Mastery! ️‍♀️
+            </p>
+            <a href="courses/ceh.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="">
+              <img
+                src="https://camo.githubusercontent.com/59b291dfb2a7c3243b471bad3b55906fdf8e59e0372e6247f48de1e5215e5475/68747470733a2f2f636f6465687573746c65722e6f72672f77702d636f6e74656e742f75706c6f6164732f323031322f31322f6a6176615f6c6f676f2e706e67"
+                alt=""
+                class="img-fluid"
+                style="width: 3.2rem"
+              />
+            </div>
+            <h4>Java</h4>
+            <p>
+              From Bean Sprout to Java Giant: Craft Robust Apps with ANSH
+              InfoTech's Expert Training! ☕
+            </p>
+            <a href="courses/java.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="aws-icon">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/7328/7328114.png"
+                alt=""
+                class="img-fluid"
+                style="width: 3rem"
+              />
+            </div>
+            <h4>Digital Marketing</h4>
+            <p>
+              Social Butterfly to Mastermind: Soar Beyond Likes, Elevate your
+              Digital Wings with us!
+            </p>
+            <a href="courses/dm.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/6119/6119533.png"
+                alt=""
+                class="img-fluid"
+                style="width: 3rem; mix-blend-mode: darken"
+              />
+            </div>
+            <h4>IOT</h4>
+            <p>
+              From Sensors to Symphony: Compose the Future of IoT with ANSH
+              InfoTech’s Masterful Training!
+            </p>
+            <a href="courses/iot.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="">
+              <img
+                src="https://cdn1.iconfinder.com/data/icons/web-hosting-1-2/300/98-512.png"
+                alt=""
+                class="img-fluid"
+                style="width: 3.2rem"
+              />
+            </div>
+            <h4>Network Administration</h4>
+            <p>
+              Firewall Fortress: Build Impregnable Defenses, ANSH InfoTech
+              Secures Your Network Kingdom!
+            </p>
+            <a href="courses/networkad.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="aws-icon">
+              <img
+                src="https://testautomationresources.com/wp-content/uploads/2018/09/test-automation-icon.png"
+                alt=""
+                class="img-fluid"
+                style="width: 3rem"
+              />
+            </div>
+            <h4>Software Testing</h4>
+            <p>
+              Bugs Beware! Unleash Quality Champions: Master Software Testing
+              with us!
+            </p>
+            <a href="courses/softwareTesting.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="">
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/004/655/703/small/trendy-design-icon-of-machine-learning-vector.jpg"
+                alt=""
+                class="img-fluid"
+                style="width: 3rem; mix-blend-mode: darken"
+              />
+            </div>
+            <h4>Advance Machine Learning</h4>
+            <p>
+              Beyond Automation: Master AI Alchemy, Craft Intelligent Futures
+              with ANSH InfoTech!
+            </p>
+            <a href="courses/advanceML.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzmM1K4uLJVclj090KYUDq8NLN3epaDgMN-BBzQUI6kXy3ZtNoBOf2fk_kmeazqjkUhcE&usqp=CAU"
+                alt=""
+                class="img-fluid"
+                style="width: 3.2rem"
+              />
+            </div>
+            <h4>Advance IOS</h4>
+            <p>
+              Think Different, Code Different: Master Cutting-Edge iOS, Innovate
+              the Smartphone Future with ANSH InfoTech!
+            </p>
+            <a href="courses/advancedIOS.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="aws-icon">
+              <img
+                src="https://cdn3d.iconscout.com/3d/premium/thumb/artificial-intelligence-learning-7675781-6220957.png?f=webp"
+                alt=""
+                class="img-fluid"
+                style="width: 3rem"
+              />
+            </div>
+            <h4>Artificial Intelligence</h4>
+            <p>
+              Brains Meet Bytes: Craft Intelligent Solutions, Future-Proof your
+              Business with ANSH InfoTech's AI Mastery!
+            </p>
+            <a href="courses/ai.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5145/5145934.png"
+                alt=""
+                class="img-fluid"
+                style="width: 3rem; mix-blend-mode: darken"
+              />
+            </div>
+            <h4>Cyber Security</h4>
+            <p>
+              Digital Detectives: Crack Cyber Codes, Unmask Vulnerabilities with
+              AIT's Mastery!
+            </p>
+            <a href="courses/cyberSecurity.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/9385/9385377.png"
+                alt=""
+                class="img-fluid"
+                style="width: 3.2rem"
+              />
+            </div>
+            <h4>Data Analyst</h4>
+            <p>
+              From Numbers to Nuggets: Craft Business Insights, Drive Growth
+              with our Data Analyst Experts!
+            </p>
+            <a href="courses/dataAnalyst.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="aws-icon">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/free-data-science-46-1170621.png?f=webp"
+                alt=""
+                class="img-fluid"
+                style="width: 3rem"
+              />
+            </div>
+            <h4>Data Science</h4>
+            <p>
+              From Raw to Revelation: Craft Data Stories, Shape the Future with
+              AIT's Data Science Alchemy!
+            </p>
+            <a href="courses/dataScience.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRczf-znXK5w66lE1cvR5wjQHdQijwn05fN7Q&usqp=CAU"
+                alt=""
+                class="img-fluid"
+                style="width: 3rem; mix-blend-mode: darken"
+              />
+            </div>
+            <h4>Database Administration</h4>
+            <p>
+              Data Guardians Rise: Master Database Magics, Secure the Digital
+              Crown with ANSH InfoTech!
+            </p>
+            <a href="courses/databaseAdmin.html">Learn More</a>
+          </div>
+          <div class="col-md-3 training-col">
+            <div class="">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5136/5136950.png"
+                alt=""
+                class="img-fluid"
+                style="width: 3.2rem"
+              />
+            </div>
+            <h4>DevOps</h4>
+            <p>
+              Think Faster, Build Faster: Master Deployment Magics, Conquer
+              Speed Demons with Prowess!
+            </p>
+            <a href="courses/devops.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--todo  hero -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+      integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

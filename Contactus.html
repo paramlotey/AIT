@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Ansh Infotech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="about.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <style>
+      #address:hover .material-symbols-outlined {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <!-- <img src="images/logo.png" alt="Bootstrap" width="240" height="50" /> -->
+          <h1 class="heading">ANSH Infotech</h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="navbarSupportedContent"
+          aria-labelledby="navbarSupportedContentLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="navbarSupportedContentLabel">
+              Menu
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto me-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="FaQ's.html" class="nav-link">FaQ's</a>
+              </li>
+              <li class="nav-item">
+                <a href="training.html" class="nav-link"
+                  >Skill Development Training</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="Contactus.html" class="nav-link">Contact Us</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+    <!-- hero -->
+    <div class="container-fluid slider">
+      <div class="slider-h">
+        <h1 class="text-center">Contact Us</h1>
+      </div>
+    </div>
+    <!-- about hero -->
+    <section class="hero container-fluid">
+      <div class="container">
+        <div class="gap-5">
+          <!--  -->
+
+          <div class="container">
+            <div class="row">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3424.228161013078!2d75.8505492!3d30.8802777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a825313ade647%3A0x8221aeeb0002f9ba!2sANSH%20InfoTech!5e0!3m2!1sen!2sin!4v1707721607374!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <!-- Add this code within your <div class="container"> after the iframe or wherever you want the form to appear -->
+
+            <!-- Contact Form -->
+            <div class="row mt-5">
+              <div class="col-md-5">
+                <div class="row align-items-center" id="address">
+                  <div class="col-sm-2">
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 50px !important"
+                      id="location-icon"
+                    >
+                      explore_nearby
+                    </span>
+                  </div>
+                  <div class="col-sm-10">
+                    <h3>Location:</h3>
+                    <p>
+                      SCF-4, 3rd Floor, Model Town Ext. D-Block, Ludhiana,
+                      Ludhiana, Punjab 141003
+                    </p>
+                  </div>
+                </div>
+                <div class="row align-items-center mt-5" id="address">
+                  <div class="col-sm-2">
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 50px !important"
+                      id="location-icon"
+                    >
+                      mail
+                    </span>
+                  </div>
+                  <div class="col-sm-10">
+                    <h3>Email:</h3>
+                    <p>anshinfotech1@gmail.com</p>
+                  </div>
+                </div>
+                <div class="row align-items-center mt-5" id="address">
+                  <div class="col-sm-2">
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 50px !important"
+                      id="location-icon"
+                    >
+                      phone
+                    </span>
+                  </div>
+                  <div class="col-sm-10">
+                    <h3>Call:</h3>
+                    <p>
+                      +91-94171-68347
+                      <br />
+                      +91-84278-99400
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-7">
+                <form
+                  id="contactForm"
+                  action="http://localhost:3000/api/conatct-us"
+                  method="post"
+                >
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      name="subject"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </section>
+    <!-- about hero -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row footer-row">
+          <div class="col-md-5 footer-col">
+            <h1 class="heading">ANSH Infotech</h1>
+            <p>
+              Creative-powered to fuel your growth goals. We build world-class
+              digital products, software and branding.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="row" style="gap: 80px">
+              <div class="col-md-2 footer-col">
+                <h5>Products</h5>
+                <ul>
+                  <li>Unify App</li>
+                  <li>Page Builder</li>
+                  <li>Templates</li>
+                  <li>Pricing</li>
+                </ul>
+              </div>
+              <div class="col-md-2 footer-col">
+                <h5>Resources</h5>
+                <ul>
+                  <li>Design</li>
+                  <li>Inspiration</li>
+                  <li>Blog</li>
+                  <li>Jobs</li>
+                </ul>
+              </div>
+              <div class="col-md-3 footer-col">
+                <h5>Support</h5>
+                <ul>
+                  <li>Documentaton</li>
+                  <li>Help Desk</li>
+                  <li>Video Guides</li>
+                  <li>Seurity</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- copyright -->
+      <div class="container-fluid mt-3">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-8 copy-col">
+              <span>&copy; Copyright Unify - All Rights Reserved.</span>
+            </div>
+            <div class="col-md-3 copy-col">
+              <i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Add this script at the end of your HTML body tag -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var registrationForm = document.getElementById("contactForm");
+
+        registrationForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          fetch("http://localhost:3000/api/contact-us", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name: document.getElementsByName("name")[0].value,
+              email: document.getElementsByName("email")[0].value,
+              subject: document.getElementsByName("subject")[0].value,
+              message: document.getElementsByName("message")[0].value,
+            }),
+          })
+            .then((response) => {
+              console.log("Response from server:", response);
+              return response.json();
+            })
+            .then((data) => {
+              console.log("Data from server:", data);
+              if (data.success) {
+                alert("Query Submitted! We will reach out to you shortly!");
+              } else {
+                alert("Something Went Wrong!");
+              }
+            })
+            .catch((error) => {
+              console.error("Error during registration:", error);
+              alert("An error occurred. Please try again.");
+            });
+        });
+      });
+    </script>
+  </body>
+</html>
